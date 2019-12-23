@@ -2,50 +2,50 @@
 Creating a django API Integration with ajax
 
 
-The Basic Structure of theProject is
-Django-API-With-Jquery-Ajax
-│ 
-└── Test_Rest
+    The Basic Structure of theProject is
+    Django-API-With-Jquery-Ajax
     │ 
-    ├── .idea
-    │ 
-    ├── FrontEnd
-    │   ├── _pycache_
-    │   ├── migrations
-    │   ├── admin.py
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── models.py
-    │   ├── test.py
-    │   ├── urls.py
-    │   ├── views.py
-    │   └── src
-    │       └── some_go_file.go
-    │ 
-    │ 
-    ├── Reacting
-    │   ├── _pycache_
-    │   ├── migrations
-    │   ├── templates
-    │   │   ├── index.html
-    │   │   └── form_data.html     
-    │   │ 
-    │   ├── admin.py
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── models.py
-    │   ├── serializers.py
-    │   ├── test.py
-    │   ├── urls.py
-    │   └── views.py
-    │ 
-    │ 
-    ├── db.sqlite3
-    │ 
-    └── manage.py
-    
+    └── Test_Rest
+        │ 
+        ├── .idea
+        │ 
+        ├── FrontEnd
+        │   ├── _pycache_
+        │   ├── migrations
+        │   ├── admin.py
+        │   ├── __init__.py
+        │   ├── admin.py
+        │   ├── apps.py
+        │   ├── models.py
+        │   ├── test.py
+        │   ├── urls.py
+        │   ├── views.py
+        │   └── src
+        │       └── some_go_file.go
+        │ 
+        │ 
+        ├── Reacting
+        │   ├── _pycache_
+        │   ├── migrations
+        │   ├── templates
+        │   │   ├── index.html
+        │   │   └── form_data.html     
+        │   │ 
+        │   ├── admin.py
+        │   ├── __init__.py
+        │   ├── admin.py
+        │   ├── apps.py
+        │   ├── models.py
+        │   ├── serializers.py
+        │   ├── test.py
+        │   ├── urls.py
+        │   └── views.py
+        │ 
+        │ 
+        ├── db.sqlite3
+        │ 
+        └── manage.py
+
     
 In the above Contente The Test_Rest (Projects ) and The FrontEnd and Reacting Both are The App of the Project . In Which Frontend Whaich are  Responsible For the Show the data in the Table as Well as Make and Delete .
 
@@ -60,6 +60,6 @@ In the above Contente The Test_Rest (Projects ) and The FrontEnd and Reacting Bo
 
 # To run the Project Just Type the following Command 
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
