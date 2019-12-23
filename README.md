@@ -3,7 +3,7 @@ Creating a django API Integration with ajax
 
 
 The Basic Structure of theProject is
-
+""""
 Django-API-With-Jquery-Ajax
 │ 
 └── Test_Rest
@@ -47,7 +47,7 @@ Django-API-With-Jquery-Ajax
     │ 
     └── manage.py
     
-    
+    """
     
 In the above Contente The Test_Rest (Projects ) and The FrontEnd and Reacting Both are The App of the Project . In Which Frontend Whaich are  Responsible For the Show the data in the Table as Well as Make and Delete .
 
