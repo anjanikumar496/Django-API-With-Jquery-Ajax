@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" >
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css" type="text/css" rel="stylesheet" >
+    <title>Title</title>
+    <script lang="javascript">
+
+
+
+
+
+
+var settings = {
+  "crossDomain": true,
+  "url": "http://127.0.0.1:8000/Backend/api/lead/",
+  "method": "GET",
+  "processData": false,
+  contentType: 'application/json'
+}
+$.ajax(settings).done(function (response) {
+console.log(response);
+$('#example').DataTable({
+        data:response.data,
+        columns: [
+        { "data": "id" },
+        { "data": "name" },
+        { "data": "email" },
+        { "data": "message" },
+        { "data": "created_at" },
+        ]
+    } );
+    
+    $('#example tr').append('<td><button onclick="highlight_row();">Edit</button> <button onclick="Deleting_Data()">Delete</button></td>')
+    });
+</script>
+<script type="text/javascript">
+    function Deleting_Data(){
+        var table = document.getElementById('example');
+        var cells = table.getElementsByTagName('td');
+        for (var i = 0; i < cells.length; i++) {
+            var cell = cells[i];
+            cell.onclick = function () {
+                var rowId = this.parentNode.rowIndex;
+                var rowsNotSelected = table.getElementsByTagName('tr');
+                for (var row = 0; row < rowsNotSelected.length; row++) {
+                    rowsNotSelected[row].style.backgroundColor = "";
+                    rowsNotSelected[row].classList.remove('selected');
+                }
+                var rowSelected = table.getElementsByTagName('tr')[rowId];
+                rowSelected.className += " selected";
+                console.log(rowSelected.cells[0].innerHTML);
+                $.ajax({
+                    url: 'http://127.0.0.1:8000/Backend/api/data/' + rowSelected.cells[0].innerHTML,
+                    type: "DELETE", 
+                    contentType: "application/json",
+                    success: function() {
+                        bootbox.alert("Proposal deleted successfully.");
+                        ReloadGrid();
+                    },
+                    error: function() {
+                    }
+                });
+            }
+        }
+    }
+</script>
+
+</head>
+<body>
+
+
+<div><a href="{% url 'add_form_data' %}"> Add Form Data</a></div>
+<table id="example" class="display" width="100%"></table>
+
+
+
+
+
+
+
+</body>
+</html>
