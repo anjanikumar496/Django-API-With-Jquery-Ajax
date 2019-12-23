@@ -1,6 +1,6 @@
 # Django-API-With-Jquery-Ajax
-Creating a django API Integration with ajax
 
+Creating a django API Integration with ajax !!!
 
     The Basic Structure of theProject is
     Django-API-With-Jquery-Ajax
@@ -20,8 +20,6 @@ Creating a django API Integration with ajax
         │   ├── test.py
         │   ├── urls.py
         │   ├── views.py
-        │   └── src
-        │       └── some_go_file.go
         │ 
         │ 
         ├── Reacting
@@ -47,18 +45,21 @@ Creating a django API Integration with ajax
         └── manage.py
 
     
+    
 In the above Contente The Test_Rest (Projects ) and The FrontEnd and Reacting Both are The App of the Project . In Which Frontend Whaich are  Responsible For the Show the data in the Table as Well as Make and Delete .
 
 
+In The Above Project The Project The FrontEnd Which are responsible For the UI and The Other hand The Reacting are responsible for the API .
 
-# To install The Dependency OF the Project
+
+# To install The Dependency OF the Project !!!
 1. Install Python 
 2. Install django (pip install django)
 3. Install (pip install django-cors-headers )
 4. Install (pip install djangorestframework)
 
 
-# To run the Project Just Type the following Command 
+# To run the Project Just Type the following Command !!!
 
     python manage.py makemigrations
     python manage.py migrate
