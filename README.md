@@ -46,7 +46,7 @@ Creating a django API Integration with ajax !!!
 
     
     
-In the above Contente The Test_Rest (Projects ) and The FrontEnd and Reacting Both are The App of the Project . In Which Frontend Whaich are  Responsible For the Show the data in the Table as Well as Make and Delete .
+In the above Contente The Test_Rest (Projects ) and The FrontEnd and Reacting Both are The App of the Project . In Which Frontend Which are  Responsible For the Show the data in the Table as Well as Make and Delete .
 
 
 In The Above Project The Project The FrontEnd Which are responsible For the UI and The Other hand The Reacting are responsible for the API .
